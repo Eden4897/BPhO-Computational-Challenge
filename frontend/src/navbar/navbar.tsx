@@ -1,7 +1,9 @@
-import { Nav, Navbar } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from './../logo1.png';
+import './navbar.css';
 
 const NavbarComp = () => {
 	return (
