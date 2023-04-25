@@ -1,0 +1,62 @@
+.table > * > tr > th,td{
+  padding: .2rem
+}
+
+.vertical-flexbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-self: top;
+}
+
+@media (min-width: 1200px) { 
+  .plot-container.plotly>.user-select-none.svg-container{
+    width: 100%;
+  }
+  .horizontal-flexbox{
+    display: flex;
+    height: 100%;
+  }
+  .vertical-flexbox{
+    width: 40%;
+  }
+  .graph-container{
+    width: 60%;
+    height: 100%;
+  }
+  .page-container{
+    height: 89%;
+  }
+
+  .form-text,.form-label{
+    align-self: flex-start;
+    padding-left: 2%;
+  }
+  .form-label{
+    padding-top: .5rem
+  }
+  #key{
+    white-space: break-spaces;
+  }
+}
+
+@media (max-width: 1200px) { 
+  .table-container{
+    display: inline;
+  }
+  .graph-container{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) { 
+  .form-select{
+    width: 23rem;
+    align-self: center;
+  }
+}
+
+html, body, #root, .App {
+  height: 100%;
+}
